@@ -18,3 +18,12 @@ Lenovo S8-50LC kernel for Android 5.0, Lollipop
 	主相機LED補光燈 	Yes
 	主相機自動對焦 	Yes
 	前相機畫素 	160 萬畫素
+# build
+	git clone https://github.com/coolshou/kernel_s8-50LC.git
+	cd kernel_s8-50LC
+	cd linux
+	ln -s ../prebuilts .
+	ln -s ../build_kernel.sh .
+	./build_kernel.sh
+it will put the compiled kernel in folder /out/target/product
+and compiled module files in folder /out/target/product/root/lib/modules
